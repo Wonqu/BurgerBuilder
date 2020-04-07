@@ -1,0 +1,32 @@
+@value theme: "../../theme.css";
+@value bg-color, bg-light-color, menu-color, main-color, secondary-color from theme;
+
+@value nav-height: 6%;
+@value foot-height: 5%;
+@value side-width: 15%;
+
+@value logo-width: 6%;
+@value menu-width: 40%;
+@value links-width: calc(100% - logo-width - menu-width);
+
+.Header {
+    height: 100%;
+}
+
+.Logo {
+    width: logo-width;
+    display: inline-block;
+    height: 100%;
+}
+
+.Menu {
+    width: menu-width;
+    display: inline-block;
+    height: 100%;
+}
+
+.Links {
+    width: links-width;
+    display: inline-block;
+    height: 100%;
+}

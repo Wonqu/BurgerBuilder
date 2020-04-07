@@ -1,0 +1,39 @@
+@value theme: "../../theme.css";
+@value bg-color, bg-light-color, menu-color, main-color, secondary-color from theme;
+
+@value nav-height: 6%;
+@value foot-height: 5%;
+@value side-width: 15%;
+@value content-width: calc(100% - side-width);
+@value content-height: calc(100% - foot-height - nav-height);
+
+.Navbar {
+    width: content-width;
+    background-color: main-color;
+    height: nav-height;
+    padding-left: side-width;
+}
+
+.Sidebar {
+    height: 100%;
+    width: side-width;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    background-color: menu-color;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.Content {
+    background-color: bg-light-color;
+    height: content-height;
+    width: content-width;
+    padding-left: side-width;
+}
+
+.Footer {
+    background-color: secondary-color;
+    height: foot-height;
+}
